@@ -1,3 +1,19 @@
 {
-  "recommendations": ["Vue.volar"]
+  "unwantedRecommendations": [
+    "octref.vetur"
+  ],
+  "recommendations": [
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "Gruntfuggly.todo-tree",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "usernamehw.errorlens",
+    "sleistner.vscode-fileutils",
+    "eamodio.gitlens",
+    "christian-kohler.path-intellisense",
+    "alefragnani.project-manager",
+  ]
 }

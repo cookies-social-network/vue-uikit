@@ -12,13 +12,19 @@ dist
 dist-ssr
 *.local
 
+auto-imports.d.ts
+components.d.ts
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+vite.config.*.timestamp-*
+*storybook.log

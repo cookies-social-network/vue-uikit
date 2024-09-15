@@ -1,0 +1,8 @@
+Dockerfile
+README.md
+.env.secrets
+docker-*
+Makefile
+index.php
+.git*
+node_modules/*

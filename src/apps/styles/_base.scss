@@ -1,0 +1,91 @@
+@use 'additionals/mixins' as *;
+@use 'additionals/variables' as *;
+
+:root {
+  --font-size--xl: 20px;
+  --font-size--lg: 16px;
+  --font-size--md: 14px;
+  --font-size--sm: 12px;
+  --font-size--h1: 24px;
+  --font-size--h2: 20px;
+  --font-size--h3: 16px;
+  --font-size--h4: 14px;
+  --font-size--h5: 12px;
+  --font-size--icon-xs: 16px;
+  --font-size--icon-sm: 20px;
+  --font-size--icon-md: 24px;
+  --font-size--icon-lg: 28px;
+  --font-size--icon-xl: 32px;
+  --line-height--primary: 1.4;
+  --line-height--secondary: 1.6;
+
+  @include generate-color-root-variables;
+}
+
+html {
+  font-family: $font;
+  font-weight: 400;
+  font-size: var(--font-size--lg);
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 800;
+}
+
+h1,
+.h1 {
+  font-size: var(--font-size--h1);
+}
+
+h2,
+.h2 {
+  font-size: var(--font-size--h2);
+  line-height: var(--line-height--secondary);
+}
+
+h3,
+.h3 {
+  font-size: var(--font-size--h3);
+}
+
+h4,
+.h4 {
+  font-size: var(--font-size--h4);
+}
+
+h5,
+.h5 {
+  font-size: var(--font-size--h5);
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.w-100 {
+  width: 100%;
+}
