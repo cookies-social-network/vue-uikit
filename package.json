@@ -1,7 +1,6 @@
 {
   "name": "vue-cookies-network-uikit",
   "description": "UI Kit for Cookies Network",
-  "private": true,
   "version": "0.0.0",
   "author": "miirsery",
   "type": "module",

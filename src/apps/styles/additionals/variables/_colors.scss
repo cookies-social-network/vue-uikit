@@ -5,7 +5,7 @@ $color--light-background: #f5f5dc; // светло-бежевый
 $color--light-primary: #d2691e; // шоколадный
 $color--light-secondary: #ffdab9; // персиковый
 $color--light-accent: #deb887; // светло-коричневый
-$color--light-text: #333333; // темный текст
+$color--light-text: #333; // темный текст
 $color--light-success: #8fbc8f; // темно-зеленый
 $color--light-info: #87ceeb; // светло-голубой
 $color--light-warning: #ffb347; // оранжевый
@@ -16,7 +16,7 @@ $color--dark-background: #2e2b5f; // темно-фиолетовый
 $color--dark-primary: #9370db; // средне-фиолетовый
 $color--dark-secondary: #8a2be2; // синий фиолетовый
 $color--dark-accent: #dda0dd; // светло-фиолетовый
-$color--dark-text: #ffffff; // белый текст
+$color--dark-text: #fff; // белый текст
 $color--dark-success: #32cd32; // лаймово-зеленый
 $color--dark-info: #4682b4; // стальной синий
 $color--dark-warning: #ff8c00; // темно-оранжевый
@@ -43,5 +43,5 @@ $colors: (
   dark-success: $color--dark-success,
   dark-info: $color--dark-info,
   dark-warning: $color--dark-warning,
-  dark-error: $color--dark-error,
+  dark-error: $color--dark-error
 );

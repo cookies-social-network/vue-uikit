@@ -49,8 +49,8 @@ const classes = computed(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   color: var(--light-text);
+  gap: 8px;
 
   &--primary {
     background-color: var(--light-primary);

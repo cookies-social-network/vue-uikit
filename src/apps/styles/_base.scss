@@ -32,11 +32,11 @@ html {
 }
 
 body {
-  scroll-behavior: smooth;
-  color: var(--light-text);
+  font-family: $font;
   font-weight: 400;
   line-height: var(--line-height--primary);
-  font-family: $font;
+  color: var(--light-text);
+  scroll-behavior: smooth;
 }
 
 html,
