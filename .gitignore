@@ -8,10 +8,7 @@ node_modules
 # testing
 coverage
 
-# next.js
-.next/
-out/
-build
+dist/
 
 # misc
 .DS_Store
@@ -48,3 +45,4 @@ yarn-error.log*
 
 vite.config.*.timestamp-*
 *storybook.log
+storybook-static/

@@ -1,13 +1,29 @@
 import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
+import { resolve } from 'path'
 import { defineConfig, loadEnv } from 'vite'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '') as ImportMetaEnv
 
   return {
     base: env.BASE_URL ?? '/',
-    plugins: [vue()],
+    plugins: [
+      vue(),
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'src/apps/styles/additionals',
+            dest: 'styles',
+          },
+          {
+            src: 'src/apps/styles/*.scss',
+            dest: 'styles',
+          },
+        ],
+      }),
+    ],
     server: {
       proxy: {
         '/api': {
@@ -39,6 +55,14 @@ export default defineConfig(({ mode }) => {
         scss: {
           additionalData: '@use "./src/apps/styles/additionals" as *;',
         },
+      },
+    },
+    build: {
+      lib: {
+        entry: resolve(__dirname, 'src/main.ts'),
+        name: 'VueUIKit',
+        fileName: 'vue-uikit',
+        formats: ['es', 'cjs', 'umd', 'iife'],
       },
     },
   }

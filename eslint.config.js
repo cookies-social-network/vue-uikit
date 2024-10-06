@@ -46,11 +46,6 @@ export default defineFlatConfig([
               position: 'before',
             },
             {
-              pattern: '#process/**',
-              group: 'internal',
-              position: 'before',
-            },
-            {
               pattern: '#pages/**',
               group: 'internal',
               position: 'before',

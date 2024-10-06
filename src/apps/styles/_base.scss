@@ -23,16 +23,20 @@
 }
 
 html {
-  font-family: $font;
-  font-weight: 400;
-  font-size: var(--font-size--lg);
   scroll-behavior: smooth;
-  overflow: hidden;
+
+  &.dark {
+    color: var(--dark-text);
+    background-color: var(--dark-background);
+  }
 }
 
 body {
   scroll-behavior: smooth;
-  overflow-y: scroll;
+  color: var(--light-text);
+  font-weight: 400;
+  line-height: var(--line-height--primary);
+  font-family: $font;
 }
 
 html,
@@ -80,6 +84,18 @@ h4,
 h5,
 .h5 {
   font-size: var(--font-size--h5);
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .extra-bold {

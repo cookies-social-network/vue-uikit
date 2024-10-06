@@ -92,6 +92,8 @@ button {
   background: none;
   cursor: pointer;
   padding: 0;
+  color: var(--light-text);
+  line-height: var(--line-height--primary);
 }
 
 a {

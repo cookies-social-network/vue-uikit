@@ -1,7 +1,47 @@
 @use 'sass:color';
 
-$color--black: #000;
+// Светлая тема
+$color--light-background: #f5f5dc; // светло-бежевый
+$color--light-primary: #d2691e; // шоколадный
+$color--light-secondary: #ffdab9; // персиковый
+$color--light-accent: #deb887; // светло-коричневый
+$color--light-text: #333333; // темный текст
+$color--light-success: #8fbc8f; // темно-зеленый
+$color--light-info: #87ceeb; // светло-голубой
+$color--light-warning: #ffb347; // оранжевый
+$color--light-error: #ff6347; // томатный
+
+// Темная тема (фиолетовые оттенки)
+$color--dark-background: #2e2b5f; // темно-фиолетовый
+$color--dark-primary: #9370db; // средне-фиолетовый
+$color--dark-secondary: #8a2be2; // синий фиолетовый
+$color--dark-accent: #dda0dd; // светло-фиолетовый
+$color--dark-text: #ffffff; // белый текст
+$color--dark-success: #32cd32; // лаймово-зеленый
+$color--dark-info: #4682b4; // стальной синий
+$color--dark-warning: #ff8c00; // темно-оранжевый
+$color--dark-error: #dc143c; // малиновый
 
 $colors: (
-  black: $color--black,
+  // Светлая тема
+  light-background: $color--light-background,
+  light-primary: $color--light-primary,
+  light-secondary: $color--light-secondary,
+  light-accent: $color--light-accent,
+  light-text: $color--light-text,
+  light-success: $color--light-success,
+  light-info: $color--light-info,
+  light-warning: $color--light-warning,
+  light-error: $color--light-error,
+
+  // Темная тема
+  dark-background: $color--dark-background,
+  dark-primary: $color--dark-primary,
+  dark-secondary: $color--dark-secondary,
+  dark-accent: $color--dark-accent,
+  dark-text: $color--dark-text,
+  dark-success: $color--dark-success,
+  dark-info: $color--dark-info,
+  dark-warning: $color--dark-warning,
+  dark-error: $color--dark-error,
 );
